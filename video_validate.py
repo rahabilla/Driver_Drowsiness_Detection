@@ -19,7 +19,7 @@ CLASS_NAMES = ["Closed", "Open", "no_yawn", "yawn"]
 # ======================================================
 # LOAD MODEL
 # ======================================================
-print("🔄 Loading model...")
+print("🔄 Loading model....")
 model = load_model(MODEL_PATH)
 print("✅ Model loaded:", MODEL_PATH)
 
@@ -148,3 +148,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
