@@ -1,9 +1,9 @@
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
 from tensorflow.keras.applications.efficientnet import preprocess_input
-
 from eye_crop_best import detect_best_eye  # your Haar-based eye detector
 
 # Load trained model
@@ -71,3 +71,4 @@ plt.imshow(image_rgb)
 plt.title(f"{face_class} + {eye_class} → {state} ({avg_conf:.2f})")
 plt.axis('off')
 plt.show()
+
